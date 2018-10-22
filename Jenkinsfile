@@ -27,7 +27,7 @@ pipeline {
         stage('Deploy Application') {
             steps {
                 // Demo purposes wait 60 secnds until deployment
-                sh 'sleep 60'
+                sh 'sleep 30'
                 run_ansible_playbook('${PLAYBOOK_DIR}/nginx_deploy.yml')
             }
         }
